@@ -1,0 +1,3 @@
+meteorProductivity will be an application built in Meteor and AngularJS that will help increase the productivity of your team and company.
+This is the first package that wraps the dashboard.
+More commits to come...
