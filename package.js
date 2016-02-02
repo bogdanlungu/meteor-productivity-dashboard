@@ -18,6 +18,8 @@ Package.onUse(function(api) {
       'client/layout.html',
       'client/main.html',
       'client/welcome.html',
-      'client/welcome.js'
+      'client/welcome.js',
+      'client/includes/access_denied.html',
+      'client/includes/not_found.html'
   ],'client');
 });
