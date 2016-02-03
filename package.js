@@ -20,6 +20,7 @@ Package.onUse(function(api) {
       'client/welcome.html',
       'client/welcome.js',
       'client/includes/access_denied.html',
-      'client/includes/not_found.html'
+      'client/includes/not_found.html',
+      'client/css/bootstrap.min.css'
   ],'client');
 });
