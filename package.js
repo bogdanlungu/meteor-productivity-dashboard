@@ -11,6 +11,7 @@ Package.onUse(function(api) {
   api.use(['mongo','minimongo','mongo-livedata','templating'], ['client','server']);
   api.use(['twbs:bootstrap','multiply:iron-router-progress', 'meteorhacks:fast-render'], 'client');
   api.use(['accounts-password', 'iron:router', 'iron:controller'], ['client','server']);
+  api.use(['ian:accounts-ui-bootstrap-3@1.2.59'], ['client','server']);
 
   api.addFiles(['common/router.js'],['client','server']);
 
@@ -21,6 +22,7 @@ Package.onUse(function(api) {
       'client/welcome.js',
       'client/includes/access_denied.html',
       'client/includes/not_found.html',
-      'client/css/bootstrap.min.css'
+      'client/stylesheets/style.css',
+      'client/config.js'
   ],'client');
 });
