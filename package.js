@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use(['mongo','minimongo','mongo-livedata','templating'], ['client','server']);
   api.use(['twbs:bootstrap','multiply:iron-router-progress', 'meteorhacks:fast-render'], 'client');
-  api.use(['accounts-password', 'iron:router', 'iron:controller'], ['client','server']);
+  api.use(['accounts-password', 'iron:router', 'iron:controller', 'ian:accounts-ui-bootstrap-3'], ['client','server']);
 
   api.addFiles(['common/router.js'],['client','server']);
 

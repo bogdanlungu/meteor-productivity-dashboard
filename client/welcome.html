@@ -1,3 +1,7 @@
 <template name="welcome">
-  <p>Hello World!</p>
+  {{#if loggedIn}}
+    <p>You can now start adding tasks and team members</p>
+  {{else}}
+    <p>Please login in order to access the features.</p>
+  {{/if}}
 </template>
