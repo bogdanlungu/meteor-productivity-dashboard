@@ -11,4 +11,5 @@ Router.configure({
 });
 
 Router.route('/', {name: 'welcome'});
+Router.route('/teams', {name: 'teams'});
 Router.route('/not_found', {name: 'notFound'});

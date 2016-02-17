@@ -23,7 +23,9 @@ Package.onUse(function(api) {
       'client/includes/access_denied.html',
       'client/includes/not_found.html',
       'client/stylesheets/style.css',
-      'client/config.js'
+      'client/config.js',
+      'client/teams.html',
+      'client/teams.js'
   ],'client');
 
   api.export('Teams'); // export the collection

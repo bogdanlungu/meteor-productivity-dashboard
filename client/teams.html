@@ -1,0 +1,18 @@
+<template name="teams">
+  <h2>Teams</h2>
+
+  {{#if countTeams}}
+     {{#each teams}}
+       <p>{{title}}</p>
+     {{/each}}
+  {{else}}
+     <p>There are no teams added in the system.</p>
+  {{/if}}
+
+  <form class="form-inline theForm">
+    <div class="form-group">
+      <input type="text" class="form-control" id="team" placeholder="Team's name">
+      <button type="button" class="btn btn-info add">Add team</button>
+    </div>
+  </form>
+</template>
