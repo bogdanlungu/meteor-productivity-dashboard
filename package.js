@@ -11,6 +11,7 @@ Package.onUse(function(api) {
   api.use(['mongo','minimongo','mongo-livedata','templating'], ['client','server']);
   api.use(['twbs:bootstrap','multiply:iron-router-progress', 'meteorhacks:fast-render'], 'client');
   api.use(['accounts-password', 'iron:router', 'iron:controller', 'ian:accounts-ui-bootstrap-3'], ['client','server']);
+  api.use(['bogdanlungu:meteor-notes-errors'], 'client');
 
   api.addFiles(['common/router.js', 'collections/productivity.js', 'server/publications.js', 'server/permissions.js'],['client','server']);
 
@@ -24,4 +25,6 @@ Package.onUse(function(api) {
       'client/stylesheets/style.css',
       'client/config.js'
   ],'client');
+
+  api.export('Teams'); // export the collection
 });

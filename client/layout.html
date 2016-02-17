@@ -36,6 +36,10 @@
        <!-- /.container -->
    </nav>
 
+<!-- Include the template from the errors and notifications package -->
+{{> meteorNotesErrors}}
+{{> meteorNotesNotifications}}
+
 <!-- Page Content -->
  <div class="container content">
      {{> yield}}
