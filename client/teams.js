@@ -30,3 +30,16 @@ Template.teams.events({
     }
   }
 });
+
+// Angular below which runs only on client
+if (Meteor.isClient) {
+  angular.module('listApp',['angular-meteor']);
+  angular.module('listApp').controller('ListController', ['$scope',
+    function ($scope) {
+      $scope.teams = [
+        { name: 'Team 1' },
+        { name: 'Team 2' },
+        { name: 'Team 3' }
+      ];
+  }]);
+}
